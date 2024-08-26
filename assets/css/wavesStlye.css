@@ -47,10 +47,10 @@ body {
 .waves {
     position: relative;
     width: 100%;
-    height: 15vh;
+    height: 45vh;
     margin-bottom: -7px;
     min-height: 100px;
-    max-height: 100px;
+    max-height: 125px;
 }
 
 .parallax > use {
@@ -125,12 +125,14 @@ body {
 
 */
 form {
+    position: relative;
     width: 370px;
-    min-height: 420px;
-    background-color: #fff;
+    /*min-height: 420px;
+    */background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    z-index: 234234;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -144,7 +146,7 @@ form {
 
 form h3
 {
-    margin-bottom:  20px;
+    margin-bottom: 40px;
 }
 form .links
 {
@@ -152,6 +154,7 @@ form .links
     justify-content: center;
     align-items: center;
     gap: 40px; 
+    margin-bottom: 20px;
 }
 form .links a
 {
@@ -161,14 +164,14 @@ form .links a
 {
     width: 40px;
     height: 40px;
-    /*background-color: #5d5d5d;
-    */background-color:var(--mainColor);
+    /* background-color: #5d5d5d; */
+    background-color:var(--mainColor);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -188,6 +191,7 @@ form span
 }
 .Remember
 {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,16 +200,16 @@ form span
 }
 .Remember label
 {
-    font-size: 22px;
+    font-size: 20px;
     display: block;
     cursor: pointer;
-    margin-bottom:-10px;
+    /* margin-bottom:-10px; */
 }
 .Remember  a
 {
     text-decoration: none;
     color: #000;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-size: 19px;
 }
 .form-check-input:active
@@ -216,13 +220,10 @@ form span
 input {
     width: 100%;
     padding: 14px;
-    font-size: 20px !important;
+    margin-bottom:5px !important ;
+    font-size: 18px !important;
     color: #5d5d5d !important;
     box-sizing: border-box;
-}
-form input:nth-child(1)
-{
-    /* margin-top: 15px !important; */
 }
 button {
     background-color:var(--mainColor);
@@ -250,8 +251,8 @@ button:hover
     background-color:#5d8702;
 }
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 0px;
+    height: 0px;
     background-image: url('eye-icon.png');
     background-size: 100%;
     cursor: pointer;
@@ -264,7 +265,7 @@ button:hover
  .icon svg 
  {
      position: absolute;
-     top: 35%;
+     top: 50%;
      left:  10%;
      fill: #5d5d5d;
      width: 22px;
@@ -275,4 +276,44 @@ button:hover
      -ms-transform: translate(-50%, -50%);
      -o-transform: translate(-50%, -50%);
      -webkit-transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+    .links {
+        gap: 15px;
+    }
+    
+    form {
+        padding: 15px;
+        width:300px;
+    }
+    .icon {
+        right: 5px;
+    }
+
+    .Remember label {
+        font-size: 16px;
+    }
+
+    .Remember a {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    form span
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    form
+    {
+        width: 290px !important;
+    }
+    .form-control {
+        font-size: 14px;
+    }
 }

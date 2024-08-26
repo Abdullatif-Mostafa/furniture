@@ -155,7 +155,8 @@ button:hover {
     
     form {
         padding: 15px;
-        max-width: 80%;
+        /* max-width: 80%; */
+        width:320px
     }
     
     .icon {
@@ -190,7 +191,7 @@ button:hover {
 @media (max-width: 480px) {
     form
     {
-        width: 50%;
+        width: 280px !important;
     }
     .form-control {
         font-size: 14px;
@@ -204,3 +205,4 @@ button:hover {
         margin-bottom: 10px;
     }
 }
+

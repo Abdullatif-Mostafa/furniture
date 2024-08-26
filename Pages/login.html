@@ -15,7 +15,7 @@
             <div>
                 <form onsubmit="return validateForm()">
                     <h3>تسجيل الدخول</h3>
-                    <div class="links">         
+                    <!-- <div class="links">         
                         <div>
                             <a href="http://www.Twitter.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -37,15 +37,15 @@
                                 </svg>
                             </a>
                         </div>                   
-                    </div>
-                    <span>او استخدم البريد الالكتروني</span>
+                    </div> -->
+                    <!-- <span>او استخدم البريد الالكتروني</span> -->
                     <!-- البريد الالكتروني -->
                     <input class="form-control mb-3" type="email" id="email" name="email" required placeholder="البريد الالكتروني">
                     <div class="error-message" id="email-error"></div>
                     
                     <!-- كلمه المرور -->
                     <div class="main_input">
-                        <input id="password" class="form-control password" type="password" name="password" placeholder="كلمه المرور" required>
+                        <input id="password" class="form-control mb-3 password" type="password" name="password" placeholder="كلمه المرور" required>
                         <div class="icon" id="togglePasswordIcon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
                                 <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486z"/>
@@ -56,12 +56,12 @@
                     </div>
                     <div class="error-message" id="password-error"></div>
          
-                    <div class="Remember">
+                    <div class="Remember mt-3">
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <input type="checkbox" id="remember" style="width: 18px; height: 18px; margin-bottom: -10px; cursor: pointer;">
                             <label for="remember">تذكرني</label>
                         </div>
-                        <a href="#">نسيت كلمه المرور؟</a>
+                        <a href="forget password.html">نسيت كلمه المرور؟</a>
                     </div>
     
                     <button type="submit">تسجيل الدخول</button>

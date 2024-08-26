@@ -585,6 +585,15 @@ font-size: 25px;
     margin-bottom: 30px;
     font-size: 20px;
 }
+@media (max-width:993px)
+{
+    .services .card button a
+    {
+        margin-bottom: 30px;
+        font-size: 20px !important;
+        padding: 8px 10px !important;
+    }
+}
 
 /* start the About-Us section  */
 .About-Us {
@@ -635,7 +644,7 @@ font-size: 25px;
 
 @media (max-width:993px) {
     .About-Us{
-        height: 50vh;
+        /* height: 50vh; */
     }
     .About-Us .content {
         /* align-items: center; */
@@ -658,7 +667,7 @@ font-size: 25px;
     .About-Us
     {
         margin-top: 50px;
-        /* height: 50vh; */
+        max-height: auto;
     }
     .About-Us .content h1 {
         font-size: 37px;
@@ -676,15 +685,18 @@ font-size: 25px;
 }
 @media (max-width:446px)
 {
-
+    .About-Us
+    {
+        max-height:auto;
+    }
     .About-Us .content h1
     {
-        font-size: 25px;
+        font-size: 32px;
     }
 
     .About-Us .content p
     {   
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 /* start the team section ************************************************************* */
@@ -722,18 +734,57 @@ font-size: 25px;
 }
 
 @media (max-width:993px) {
-    .team {
-        /* height: 600px; */
+    .team .heading p {
+        font-size: 25px;
+    }
+
+    .team .heading h2 {
+        font-size: 25px;
+    }
+
+    .team .heading i {
+        font-size: 40px;
+    }
+
+    .team .heading {
+        margin-bottom: 20px;
     }
 }
 
+@media (max-width:768px) {
+    .team .heading p {
+        font-size: 20px;
+    }
+
+    .team .heading h2 {
+        font-size: 20px;
+    }
+
+    .team .heading i {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:446px) {
+    .team .heading p {
+        font-size: 18px;
+    }
+
+    .team .heading h2 {
+        font-size: 18px;
+    }
+
+    .team .heading i {
+        font-size: 25px;
+    }
+}
 /* start the contact ************************************************************************** */
 .contact {
     width: 100%;
-    min-height: 100vh;
+    margin-bottom: 40px;
+    /* min-height: 100vh; */
     /* background-color: #f5f5f5; */
 }
-
 .contact .heading {
     display: flex;
     justify-content: center;
@@ -884,19 +935,19 @@ option {
 }
 .clients .box
 {
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .clients .box:hover
 {
-    transform: rotate(3deg);
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
+    transform: scale(1.035);
+    -webkit-transform: scale(1.035);
+    -moz-transform: scale(1.035);
+    -ms-transform: scale(1.035);
+    -o-transform: scale(1.035);
 }
 .clients .client-content {
     width: 100%;
