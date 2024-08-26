@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #252525;
+    font-size: 20px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+select option
+{
+    font-size: 22px;
+    margin: 14px ;
+    /* background-color: #333; */
+}
+select option:hover
+{
+    background-color:#45a049;
+}
+input::placeholder,
+textarea::placeholder
+{
+    font-size: 18px;
+    color: #afafaf;
+}
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+ul li span
+{
+    font-size: 22px;
+}
+ul li 
+{
+    list-style: none;
+    box-shadow: #afafaf;
+    padding: 4px;
+}
+ul li .services
+{
+    display: flex;
+    justify-content: space-between;
+}
+button:hover {
+    background-color: #45a049;
+}
+ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.edit-button,
+.delete-button {
+    background-color: #008CBA;
+    width: 80px;
+    font-size: 19px;
+}
+
+.edit-button:hover {
+    background-color: #0077A8;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* نموذج تعديل الخدمة */
+#editServiceModal {
+    display: none;
+}
+
+/* نموذج حذف الخدمة */
+#deleteServiceModal {
+    display: none;
+}

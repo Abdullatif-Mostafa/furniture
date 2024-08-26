@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--  تعديل الخدمة -->
+        <!-- <div id="editServiceModal" class="container" style="display: none;"> -->
+            <h1>نموذج تعديل الخدمة</h1>
+            <form id="editServiceForm">
+                <label for="editServiceName">اسم الخدمة:</label>
+                <input class="form-control"  type="text" id="editServiceName" name="editServiceName" required>
+               
+                <label for="editServiceDescription">وصف الخدمة:</label>
+                    <textarea class="form-control" id="editServiceDescription" placeholder="وصف الخدمه" name="editServiceDescription" rows="4" required></textarea>
+                    
+                <label for="editServiceCategory">نوع الخدمة:</label>
+                <select class="form-control" id="editServiceCategory" name="editServiceCategory" required>
+                    <option  selected>اختر الخدمة المطلوبة</option>
+                    <option value="category1" >خدمات نقل </option>
+                    <option value="category2">خدمات تخزين</option>
+                    <option value="category3">تنظيف مكيفات سبليت</option>
+                </select>
+
+                <button class="my-2" type="submit">حفظ التعديلات</button>
+                <button type="button" onclick="closeEditModal()">إلغاء</button>
+            </form>
+        </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/file.js"></script>
+</body>
+</html>

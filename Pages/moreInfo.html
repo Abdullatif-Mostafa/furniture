@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,600;1,100;1,200;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+      <!-- start the header -->
+      <nav id="navbar" class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand logo" href="../index.html">
+                <img src="../assets/images/logo2.png" alt="">
+            </a>
+            <button onclick="showNavToggler()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars text-dark fs-3"></i>
+                <i class="fa-solid fa-xmark fs-2" style="cursor: pointer;color: black; display: none;"></i>
+                <!-- <i class="fa "></i> -->
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a href="../index.html" class="nav-link ">الرئيسية</a></li>
+                    <li class="nav-item"> <a href="about.html" class="nav-link">من نحن</a></li>
+                    <li class="nav-item"> <a href="services.html" class="nav-link">خدماتنا</a></li>
+                    <li class="nav-item"> <a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                    <!-- <li class="nav-item"> <a href="login.html" class="nav-link">تسجيل الدخول</a></li> -->
+                </ul>
+
+                <!-- dropdown  -->
+                <div class="d-flex gap-3 align-items-center justify-content-center">
+                    <a href="login.html" class="btn dropdownButton"> تسحيل الدخول</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdownIcon" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user user-icon"></i> أحمد
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <a class="dropdown-item" href="Profile.html"><i class="fas fa-user user-icon"></i> اسم المستخدم
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="login.html"><i
+                                        class="fas fa-sign-out-alt user-icon"></i> تسجيل الخروج</a></li>
+                            <li><a class="dropdown-item" href="settingPage.html"><i
+                                        class="fas fa-user-cog user-icon"></i> إعداد الحساب</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  end of dropdown -->
+
+
+            </div>
+        </div>
+    </nav>
+
+      <!-- comunications tools -->
+      <div class="concatunation">
+        <div class="concat-tool" id="concat-tool">
+            <a href="index.html">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="whats.html">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="conct-main" id="conct-main" onclick="showConcat()">
+            <!-- <i class="fas fa-comments"></i> -->
+            <i class="fas fa-comment-dots"  style="cursor: pointer;"></i>
+            <i class="fa-solid fa-x"  style="cursor: pointer; display: none;"></i>
+        </div>
+    </div>
+    
+    <!-- start the more info section -->
+    <section class="more-info">
+        <div class="container">
+            <div class="info-heading">
+                <h3 class="text-center fs-1  ltr">
+                    خدمات نقل العفش والاثاث
+                </h3>
+                <span></span>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="info-box">
+                        <p>
+                            تقدم الشركة افضل خدمات نقل الاثاث باقل تكاليف وأسرع وقت لتوفير المال والجهد وراحة العملاء من نقل وفك وتركيب وتغليف الأثاث من خلال احدث سيارات مجهزه بمقاسات مختلفة من خلال متخصصون وعماله  فنية مدربة .
+                        </p>
+                        <p>
+                            نحن نضمن لكم النقل السريع والامن وبدون اي خدش او اعطاب ونضمن بتعويض عملائنا في هذه الحالات لذلك نعد من افضل الشركات في الرياض . كما اننا نمتلك عمالة فنية مدربة 
+                        </p>
+                        <p>
+                            فعندما تفكر فى الإنتقال من منزل الى اخر نجد ان فكرة التنقل قد تؤدى بنا الى الغاء الفكرة من الاساس لما لها من صعوبات فى النقل،
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-box">
+                        <img src="../assets/images/4735989.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of the more info section -->
+
+
+     <!-- start the footer section  -->
+     <footer class="footer_section">
+        <div class="container">
+            <a href="../index.html" class="footer-brand">
+                <img src="../assets/images/logo2.png" alt="" style="width: 200px" />
+            </a>
+            <div class="col-lg-10 mx-auto px-0">
+                <div class="footer_items">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="">
+                                <div class="item ">
+                                    <div class="img-box ">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <p>
+                                        موقعنا
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <div class="item ">
+                                    <div class="img-box ">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        +20 01234567890
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <div class="item ">
+                                    <div class="img-box">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        amana@gmail.com
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-box">
+                <h4>
+                    تابعنا
+                </h4>
+                <div class="box">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i> </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="">
+                        <i class="fa-brands fa-google-plus-g"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="container">
+                <p class="fs-5">
+                    &copy; <span id="displayYear"></span> جميع الحقوق محفوظه
+                    <a href="#">الأمانة لخدمات الاثاث</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/Custom js/navBar.js"></script>
+    <script src="../assets/Custom js/comunications.js"></script>
+
+</body>
+
+</html>
